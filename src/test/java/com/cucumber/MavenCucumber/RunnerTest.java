@@ -8,8 +8,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		format= {"pretty", "html:target/html/","json:target/json/output.json"},
+		features="src/test/resource",
+		tags= {"@firefox, @chrome"}
 		
-		features="src/test/resource"
 		)
 public class RunnerTest {
 
