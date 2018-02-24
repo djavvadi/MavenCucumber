@@ -19,7 +19,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.2.1</version>
+				<version>2.4</version>
 				<executions>
 					<execution>
 						<id>package-jar-with-dependencies</id>
@@ -34,7 +34,8 @@
 							</descriptorRefs>
 							<archive>
 								<manifest>
-									<mainClass>cucumber.api.cli.Main</mainClass>
+									<addClasspath>true</addClasspath>
+									<mainClass>com.cuke.App</mainClass>
 								</manifest>
 							</archive>
 						</configuration>

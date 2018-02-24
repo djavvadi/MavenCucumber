@@ -1,5 +1,5 @@
 # use a cucumber base image
-FROM cucumber/cucumber-build
+FROM scratch
 
 # set maintainer
 LABEL maintainer "djavvadi@hotmail.com"
